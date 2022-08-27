@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,XTRA@8..144,151,550,499;8..144,151,750,499;8..144,151,950,499&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+	<!-- /font -->
+
+	<title>Портфолио</title>
+</head>
+
+<body>
+	<main class="px-4 w-full">
+		<section class="h-screen flex items-center w-full">
+			<div class="block w-full space-y-10">
+				<h1 class="px-8">
+					<a class="block text-center font-bold text-6xl p-8 rounded-full transition hover:scale-95 bg-white text-black" href="https://github.com/sr-ov" target="_blank">
+						Мой <span class="font-sec">Github</span>
+					</a>
+				</h1>
+
+				<h2 class="px-8">
+					<a class="block text-center font-bold text-6xl p-8 rounded-full transition hover:scale-95 bg-white text-black" href="">
+						Сделанные мной проекты
+					</a>
+				</h2>
+			</div>
+		</section>
+
+		<section class="py-10 pb-96">
+			<div class="grid justify-center">
+				<h3 class="text-4xl mb-8 text-center">
+					Используемые мной технологии
+				</h3>
+
+				<div
+					class="space-y-[1px]"
+					x-data="{
+						front: ['html/pug', 'css/scss', 'tailwind.css', 'js/ts', 'react.js', 'vue.js', 'alpine.js'],
+						back: ['node.js', 'express.js', 'nest.js']
+					}"
+				>
+					<ul>
+						<template x-for="item in front" :key="item">
+							<li class="inline-block mr-[1px] uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]">
+								<span class="font-sec" x-text="item"></span>
+							</li>
+						</template>
+					</ul>
+
+					<ul>
+						<template x-for="item in back" :key="item">
+							<li class="inline-block mr-[1px] uppercase px-2 py-3 bg-white text-black font-bold rounded-[3px]">
+								<span class="sec-font" x-text="item"></span>
+							</li>
+						</template>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+	</main>
+
+
+	<script src="/main.js" type="module"></script>
+</body>
+</html>
