@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,XTRA@8..144,151,550,499;8..144,151,750,499;8..144,151,950,499&display=swap"
+			rel="stylesheet"
+		/>
+	
+		<link
+			href="https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic"
+			rel="stylesheet"
+		/>
+		<!-- /font -->
+	
+		<style>
+			body {
+				transition: opacity 1s;
+			}
+			body[x-cloak] {
+				opacity: 0;
+			}
+		</style>
+		
+		<title>Портфолио</title>
+		<script type="module" crossorigin src="/myportfolio/assets/main.40f0bcb0.js"></script>
+		<link rel="stylesheet" href="/myportfolio/assets/main.4e34039e.css">
+	</head>
+
+	<body x-data x-cloak>
+		<main>
+			<section class="h-screen py-20 flex items-center min-h-[700px] ">
+				<div class="block w-full space-y-10 will-change-transform translate-y-[var(--translateY)]" id="hero">
+					<h1 class="px-[15px] lg:px-8">
+						<a
+							class="block text-center font-bold text-lg md:text-4xl md:p-8 xl:text-6xl p-4 rounded-full transition lg:hover:scale-95 bg-white text-black"
+							href="https://github.com/sr-ov"
+							target="_blank"
+						>
+							Мой <span class="font-sec">Github</span>
+						</a>
+					</h1>
+			
+					<h2 class="px-[15px] lg:px-8">
+						<button
+							class="block w-full text-center font-bold text-lg md:text-4xl md:p-8 xl:text-6xl p-4 rounded-full transition lg:hover:scale-95 bg-white text-black"
+							@click="$refs.projects.scrollIntoView({ behavior: 'smooth' })"
+						>
+							Сделанные мной проекты
+						</button>
+					</h2>
+				</div>
+			</section>
+			<section class="h-screen py-20">
+				<div
+					class="container h-full grid items-center content-center will-change-transform translate-y-[var(--translateY)]"
+					id="technologies"
+				>
+					<h3 class="text-3xl md:text-4xl mb-8">Используемые мной технологии</h3>
+			
+					<div class="space-y-[1px]">
+						<ul class="flex flex-wrap gap-[1px] justify-start">
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">html/pug</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">css/scss</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">tailwind.css</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">js/ts</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">react.js</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">vue.js</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">alpine.js</span>
+								</li>
+						</ul>
+			
+						<ul class="flex flex-wrap gap-[1px]">
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">Node.js</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">Express.js</span>
+								</li>
+								<li
+									class="block uppercase px-1 py-3 bg-white text-black font-bold rounded-[3px]"
+								>
+									<span class="font-sec">Nest.js</span>
+								</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="h-screen py-20 will-change-transform translate-y-[var(--translateY)]" id="education">
+				<div class="container h-full grid justify-center items-center content-center">
+					<h3 class="text-3xl md:text-4xl mb-8">Обучался</h3>
+					<ul>
+						<li><span class="font-sec mr-3">html/css</span> в HTML Academy</li>
+						<li><span class="font-sec mr-3">JavaScript</span> в Glo Academy</li>
+						<li>
+							<span class="font-sec mr-3">react/vue</span>
+							и другим технологиям самостоятельно
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="min-h-screen pt-20 pb-12" x-ref="projects">
+				<div class="container">
+					<h3 class="text-3xl md:text-4xl mb-8">Сделал</h3>
+			
+					<ul class="space-y-20">
+							<li>
+								<h4 class="text-2xl mb-6">Abito</h4>
+			
+								<ul class="flex gap-2 mb-4">
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://abito.herokuapp.com/"
+												target="_blank"
+											>
+												демо
+											</a>
+										</li>
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://github.com/sr-ov/avito-clone"
+												target="_blank"
+											>
+												посмотреть код
+											</a>
+										</li>
+								</ul>
+			
+								<iframe
+									class="aspect-video"
+									width="100%"
+									height="100%"
+									src="https://www.youtube.com/embed/WfN-9HQ2-Kg?controls&#x3D;1&amp;autoplay&#x3D;0&amp;mute&#x3D;1"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+			
+								<div class="mt-4 space-y-3 text-sm md:text-base leading-loose">
+										<p>Abito - это fullstack приложение для размещения объявлений написанное на Vue&nbsp;3 и NestJS.</p>
+										<p>Пользователи приложения могут регистрироваться, аутентифицироваться и изменять настройки профиля, размещать объявления в нескольких категориях, добавлять заинтересовавшие объявления в избранное, позвонить или написать в чат владельцу объявления.</p>
+								</div>
+							</li>
+							<li>
+								<h4 class="text-2xl mb-6">Lomoda</h4>
+			
+								<ul class="flex gap-2 mb-4">
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://vue-clothes-store.herokuapp.com/"
+												target="_blank"
+											>
+												демо
+											</a>
+										</li>
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://github.com/sr-ov/clothes-store"
+												target="_blank"
+											>
+												посмотреть код
+											</a>
+										</li>
+								</ul>
+			
+								<iframe
+									class="aspect-video"
+									width="100%"
+									height="100%"
+									src="https://www.youtube.com/embed/G0XO-PsZd_Y?controls&#x3D;1&amp;autoplay&#x3D;0&amp;mute&#x3D;1"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+			
+								<div class="mt-4 space-y-3 text-sm md:text-base leading-loose">
+										<p>Lomoda - это fullstack интернет магазин по продаже одежды написанный на Vue&nbsp;3 и Express.js.</p>
+										<p>Пользователи магазина могут выбрать понравившуюся одежду для женщин, мужчин и детей, выбрать цвет, размер и сделать заказ.</p>
+								</div>
+							</li>
+							<li>
+								<h4 class="text-2xl mb-6">клон Trello</h4>
+			
+								<ul class="flex gap-2 mb-4">
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://sr-ov.github.io/trello_clone/"
+												target="_blank"
+											>
+												демо
+											</a>
+										</li>
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://github.com/sr-ov/trello_clone"
+												target="_blank"
+											>
+												посмотреть код
+											</a>
+										</li>
+								</ul>
+			
+								<iframe
+									class="aspect-video"
+									width="100%"
+									height="100%"
+									src="https://www.youtube.com/embed/qjeEjW1I-OM?controls&#x3D;1&amp;autoplay&#x3D;0&amp;mute&#x3D;1"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+			
+								<div class="mt-4 space-y-3 text-sm md:text-base leading-loose">
+										<p>Клон Trello - это приложение для организации задач, проектов написанное на React.</p>
+										<p>Пользователи могут создавать списки и карточки с заданиями в них, изменять название и описание, перемещать, копировать, удалять как списки, так и карточки.</p>
+								</div>
+							</li>
+							<li>
+								<h4 class="text-2xl mb-6">Delivery food</h4>
+			
+								<ul class="flex gap-2 mb-4">
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://delivery-food-kappa.vercel.app/"
+												target="_blank"
+											>
+												демо
+											</a>
+										</li>
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://github.com/sr-ov/delivery-food"
+												target="_blank"
+											>
+												посмотреть код
+											</a>
+										</li>
+								</ul>
+			
+								<iframe
+									class="aspect-video"
+									width="100%"
+									height="100%"
+									src="https://www.youtube.com/embed/ASSb9dG0iYk?controls&#x3D;1&amp;autoplay&#x3D;0&amp;mute&#x3D;1"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+			
+								<div class="mt-4 space-y-3 text-sm md:text-base leading-loose">
+										<p>Delivery food - это приложение для заказа и доставки еды написанное на Next.js.</p>
+										<p>Пользователи могут заказать понравившиеся блюда из нескольких рестаранов, найти блюда при помощи поиска, добавить в корзину, изменить количество и сделать заказ.</p>
+								</div>
+							</li>
+							<li>
+								<h4 class="text-2xl mb-6">Поиск городов</h4>
+			
+								<ul class="flex gap-2 mb-4">
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://data-filter-cities.web.app/"
+												target="_blank"
+											>
+												демо
+											</a>
+										</li>
+										<li>
+											<a
+												class="inline-block text-center text-sm text-black p-2 rounded-full transition-[padding] lg:hover:px-6 bg-white"
+												href="https://github.com/sr-ov/filter_cities"
+												target="_blank"
+											>
+												посмотреть код
+											</a>
+										</li>
+								</ul>
+			
+								<iframe
+									class="aspect-video"
+									width="100%"
+									height="100%"
+									src="https://www.youtube.com/embed/gdaO0YwxpXE?controls&#x3D;1&amp;autoplay&#x3D;0&amp;mute&#x3D;1"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+			
+								<div class="mt-4 space-y-3 text-sm md:text-base leading-loose">
+										<p>Поиск городов - это приложение поиска городов по странам написанное на React.</p>
+										<p>У пользователей есть возможность пользоваться приложением на руском, немецком или английском языке. Пользователи могут воспользоваться поиском и найти интересующие города или выбрать из списка. Список содержит название страны или города, а также население. При выборе города и нажатия на ссылку перейти пользователь будет перенаправлен на страницу в википедии с выбранным городом.</p>
+								</div>
+							</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
