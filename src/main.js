@@ -1,7 +1,6 @@
 import './main.css'
 
 /* === ALPINE === */
-import './scripts/alpine.js'
+import './scripts/alpine'
 /* /=== ALPINE === */
-
-console.log('main.js')
+import './scripts/scroll'

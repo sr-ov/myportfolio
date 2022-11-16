@@ -1,0 +1,104 @@
+{
+	"front": [
+		"html/pug",
+		"css/scss",
+		"tailwind.css",
+		"js/ts",
+		"react.js",
+		"vue.js",
+		"alpine.js"
+	],
+	"back": ["Node.js", "Express.js", "Nest.js"],
+	"projects": [
+		{
+			"title": "Abito",
+			"links": [
+				{
+					"text": "демо",
+					"href": "https://abito.herokuapp.com/"
+				},
+				{
+					"text": "посмотреть код",
+					"href": "https://github.com/sr-ov/avito-clone"
+				}
+			],
+			"desc": [
+				"Abito - это fullstack приложение для размещения объявлений написанное на Vue&nbsp;3 и NestJS.",
+				"Пользователи приложения могут регистрироваться, аутентифицироваться и изменять настройки профиля, размещать объявления в нескольких категориях, добавлять заинтересовавшие объявления в избранное, позвонить или написать в чат владельцу объявления."
+			],
+			"src": "https://www.youtube.com/embed/WfN-9HQ2-Kg?controls=1&autoplay=0&mute=1"
+		},
+		{
+			"title": "Lomoda",
+			"links": [
+				{
+					"text": "демо",
+					"href": "https://vue-clothes-store.herokuapp.com/"
+				},
+				{
+					"text": "посмотреть код",
+					"href": "https://github.com/sr-ov/clothes-store"
+				}
+			],
+			"desc": [
+				"Lomoda - это fullstack интернет магазин по продаже одежды написанный на Vue&nbsp;3 и Express.js.",
+				"Пользователи магазина могут выбрать понравившуюся одежду для женщин, мужчин и детей, выбрать цвет, размер и сделать заказ."
+			],
+			"src": "https://www.youtube.com/embed/G0XO-PsZd_Y?controls=1&autoplay=0&mute=1"
+		},
+		{
+			"title": "клон Trello",
+			"links": [
+				{
+					"text": "демо",
+					"href": "https://sr-ov.github.io/trello_clone/"
+				},
+				{
+					"text": "посмотреть код",
+					"href": "https://github.com/sr-ov/trello_clone"
+				}
+			],
+			"desc": [
+				"Клон Trello - это приложение для организации задач, проектов написанное на React.",
+				"Пользователи могут создавать списки и карточки с заданиями в них, изменять название и описание, перемещать, копировать, удалять как списки, так и карточки."
+			],
+			"src": "https://www.youtube.com/embed/qjeEjW1I-OM?controls=1&autoplay=0&mute=1"
+		},
+		{
+			"title": "Delivery food",
+			"links": [
+				{
+					"text": "демо",
+					"href": "https://delivery-food-kappa.vercel.app/"
+				},
+				{
+					"text": "посмотреть код",
+					"href": "https://github.com/sr-ov/delivery-food"
+				}
+			],
+			"desc": [
+				"Delivery food - это приложение для заказа и доставки еды написанное на Next.js.",
+				"Пользователи могут заказать понравившиеся блюда из нескольких рестаранов, найти блюда при помощи поиска, добавить в корзину, изменить количество и сделать заказ."
+			],
+			"src": "https://www.youtube.com/embed/ASSb9dG0iYk?controls=1&autoplay=0&mute=1"
+		},
+		{
+			"title": "Поиск городов",
+			"links": [
+				{
+					"text": "демо",
+					"href": "https://data-filter-cities.web.app/"
+				},
+				{
+					"text": "посмотреть код",
+					"href": "https://github.com/sr-ov/filter_cities"
+				}
+			],
+			"desc": [
+				"Поиск городов - это приложение поиска городов по странам написанное на React.",
+				"У пользователей есть возможность пользоваться приложением на руском, немецком или английском языке. Пользователи могут воспользоваться поиском и найти интересующие города или выбрать из списка. Список содержит название страны или города, а также население. При выборе города и нажатия на ссылку перейти пользователь будет перенаправлен на страницу в википедии с выбранным городом."
+			],
+			"src": "https://www.youtube.com/embed/gdaO0YwxpXE?controls=1&autoplay=0&mute=1"
+		}
+	]
+}

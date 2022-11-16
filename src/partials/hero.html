@@ -1,0 +1,22 @@
+<section class="h-screen py-20 flex items-center min-h-[700px] ">
+	<div class="block w-full space-y-10 will-change-transform translate-y-[var(--translateY)]" id="hero">
+		<h1 class="px-[15px] lg:px-8">
+			<a
+				class="block text-center font-bold text-lg md:text-4xl md:p-8 xl:text-6xl p-4 rounded-full transition lg:hover:scale-95 bg-white text-black"
+				href="https://github.com/sr-ov"
+				target="_blank"
+			>
+				Мой <span class="font-sec">Github</span>
+			</a>
+		</h1>
+
+		<h2 class="px-[15px] lg:px-8">
+			<button
+				class="block w-full text-center font-bold text-lg md:text-4xl md:p-8 xl:text-6xl p-4 rounded-full transition lg:hover:scale-95 bg-white text-black"
+				@click="$refs.projects.scrollIntoView({ behavior: 'smooth' })"
+			>
+				Сделанные мной проекты
+			</button>
+		</h2>
+	</div>
+</section>

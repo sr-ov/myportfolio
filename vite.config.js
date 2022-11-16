@@ -1,32 +1,30 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars'
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-import { resolve } from 'path'
-import minify from 'vite-plugin-minify'
+
+import data from './data.json'
+
+const devRoot = (...path) => resolve(__dirname, 'src', ...(path ? path : []))
+const buildRoot = (...path) => resolve(__dirname, 'dist', ...(path ? path : []))
 
 export default defineConfig({
-	root: resolve(__dirname, 'src'),
+	base: '/myportfolio/',
+	root: devRoot(),
 	build: {
 		minify: true,
 		rollupOptions: {
 			input: {
-				main: resolve(__dirname, 'src/index.html'),
+				main: devRoot('index.html'),
 			},
 			output: {
-				plugins: [minify({})],
-				dir: resolve(__dirname, 'dist'),
+				dir: buildRoot(),
 			},
 		},
 	},
 	plugins: [
 		handlebars({
-			context: {},
-			partialDirectory: resolve(__dirname, './src/partials'),
-		}),
-		createSvgIconsPlugin({
-			iconDirs: [resolve(process.cwd(), 'src/icons')],
-			symbolId: '[name]',
-			customDomId: '__svg__icons__dom__',
+			context: data,
+			partialDirectory: devRoot('partials'),
 		}),
 	],
 })

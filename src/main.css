@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-	.white-shadow {
-		box-shadow: 0px -6px 50px 11px #fff;
-	}
-}
-
 :root {
 	--ff-prim: 'Roboto Flex';
 	--ff-sec: 'JetBrains Mono';
@@ -17,12 +11,21 @@ body {
 	background-color: #000;
 	color: #fff;
 	font-family: var(--ff-prim), sans-serif;
+	overflow-x: hidden;
 }
 
 .font-sec {
 	font-family: var(--ff-sec);
 }
 
-.shadow {
-	box-shadow: 0px -6px 100px 11px #fff;
+.container {
+	max-width: 700px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+#technologies,
+#hero,
+#education {
+	--translateY: 0%;
 }
